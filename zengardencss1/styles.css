@@ -1,0 +1,17 @@
+/* 
+ ### CORES UTILIZADAS ###
+ 
+ DESTAQUE #FF6B00
+ FUNDO #FFCAAD
+ TEXTO #483427
+ MISC #C26F45
+*/
+
+html {
+    color:  #483427;
+    background-color: #FFCAAD;
+}
+
+h3{
+    color: #FF6B00
+}
