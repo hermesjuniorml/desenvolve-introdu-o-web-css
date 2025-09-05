@@ -1,0 +1,113 @@
+/* 1. Defina o elemento .page-wrapper como referência para posicionamento.
+2. Faça com que o painel .explanation ocupe 60% da largura disponível, mas crie um
+espaçamento a direita de 35% utilizando margin .
+- Adicione uma borda à direita do painel de 1px, com a cor #1f295c
+- Adicione um espaçamento interno de 2% no lado direito do painel.
+3. Agora mova o menu de designs para a direita da página, ocupando o espaço em branco
+deixado pelo elemento .explanation .
+- Faça-o iniciar na parte superior da página, após a parte de introdução (por exemplo,
+aplicando top: 560px ).
+- Faça-o iniciar após o elemento .explanation (por exemplo, aplicando left: 62% ).
+- Adicione um espaçamento interno horizontal de 2% no menu para centralizá-lo.
+ .*/
+/* 
+ ### CORES UTILIZADAS ###
+ 
+ DESTAQUE #FF6B00
+ FUNDO #FFCAAD
+ TEXTO #483427
+ MISC #C26F45
+*/
+
+html {
+    color:  #483427;
+    background-color: #FFCAAD;
+    font-size: 18px;
+    font-family: 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+h3{
+    color: #FF6B00
+}
+
+html p {
+    text-indent: 1em;
+}
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+}
+h1 {
+    font-size: 1.8em;
+}
+h2{
+    font-size: 1.4em;
+}
+h3{
+    font-size: 1.2em;
+}
+
+#zen-intro{
+    text-align: right;
+    height: 550px;
+}
+
+#zen-supporting{
+    line-height: 1.5;
+}
+abbr {
+    font-variant: small-caps;
+}
+body{
+    padding: 10%
+}
+.page-wrapper{
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 10%;
+    position:relative;
+}
+#design-archives{
+    display: none;
+    /* background-color: red; */
+}
+header{
+    color:#FFCAAD;
+    /* text-align: center; */
+    background-color: #C26F45;
+    margin-bottom: 5em;
+}
+header > h1,h2{
+    display: inline;
+    text-align: center;
+    margin: 0 1em;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li {
+    margin: 1em;
+    text-align: center;
+}
+footer{
+    background-color: #C26F45;
+    margin: 4%;
+}
+footer a {
+    border: solid 2px #483427;
+    padding: 0.5em;
+    display: inline-block;
+}
+.explanation{
+    width: 60%;
+    margin-right: 35%;
+    border-right: solid #1f295c;
+    padding-right: 2% ;
+}
+.design-selection{
+    position: absolute;
+    top:23%;
+    left: 60%;
+    padding: 2%
+}
