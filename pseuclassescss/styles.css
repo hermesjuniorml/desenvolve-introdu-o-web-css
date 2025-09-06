@@ -1,0 +1,204 @@
+/* 1. Customize a aparência dos links da seguinte forma:
+
+Por padrão, devem ter a cor de destaque e estarem em negrito.
+
+Se sobrepostos, devem ter sua cor alterada para uma tonalidade mais clara/escura. Os links visitados não devem ficar mais em negrito.
+
+2. Vamos dar um destaque a primeira letra do primeiro parágrafo da seção principal. Você deverá customizá-lo para que:
+
+Tenha tamanho de fonte 3 vezes maior que o padrão.
+
+Seja de uma fonte diferente da escolhida para o site.
+
+Fique flutuando a esquerda.
+
+OBS: você precisará aplicar mais de um pseudo-seletor para realizar essa estilização. Fique atento!
+
+3. Utilize bordas para criar um separador entre os itens presentes no menu de design. Aplique uma borda superior no topo de todos os itens de menu.
+
+Aplique uma borda inferior apenas no último item da lista
+ .*/
+/* 
+ ### CORES UTILIZADAS ###
+ 
+ DESTAQUE #FF6B00
+ FUNDO #FFCAAD
+ TEXTO #483427
+ MISC #C26F45
+*/
+
+html {
+    color: #483427;
+    background-color: #FFCAAD;
+    font-size: 18px;
+    font-family: 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+a {
+    color: #FF6B00;
+    font-weight: 800;
+}
+
+a:visited {
+    font-weight: normal;
+}
+
+a:hover {
+    color: #483427
+}
+
+h3 {
+    color: #FF6B00
+}
+
+html p {
+    text-indent: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+#zen-intro {
+    text-align: right;
+    height: 550px;
+}
+
+#zen-supporting {
+    line-height: 1.5;
+}
+
+abbr {
+    font-variant: small-caps;
+}
+
+body {
+    padding: 10%
+}
+
+.page-wrapper {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 10%;
+    position: relative;
+}
+
+#design-archives {
+    display: none;
+    /* background-color: red; */
+}
+
+header {
+    color: #FFCAAD;
+    /* text-align: center; */
+    background-color: #C26F45;
+    margin-bottom: 5em;
+}
+
+header>h1,
+h2 {
+    display: inline;
+    text-align: center;
+    margin: 0 1em;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li {
+    margin: 1em;
+    text-align: center;
+}
+
+footer {
+    background-color: #C26F45;
+    margin: 4%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+footer a {
+    border: solid 2px #483427;
+    padding: 0.5em;
+    display: inline-block;
+    flex-basis: 3em;
+    text-align: center;
+}
+
+.explanation {
+    width: 60%;
+    margin-right: 35%;
+    border-right: solid #1f295c;
+    padding-right: 2%;
+}
+
+.design-selection {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    padding: 2%
+}
+
+#zen-benefits {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    border-bottom: solid #1f295c;
+}
+
+#zen-benefits>h3 {
+    align-self: center;
+    flex-basis: 30%;
+}
+
+#zen-benefits p {
+    flex-basis: 70%;
+}
+
+#zen-participation {
+    margin-top: 10%;
+    border-top: solid #1f295c;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#zen-participation>h3 {
+    flex-basis: 50%;
+    align-self: center;
+}
+
+#zen-participation>p {
+    flex-basis: 50%;
+}
+
+.main p:first-of-type:first-letter {
+    color: red;
+    float: left;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+}
+#design-selection li {
+    border-top: solid #1f295c;
+}
+#design-selection li:last-child {
+    border-bottom: solid #1f295c;
+}
